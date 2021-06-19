@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>DocsTime</title>
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animate.css">
+		
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	
+	<link rel="stylesheet" type="text/css" href="css/jquery.datetimepicker.css"/>
+	
+	<!-- fullCalendar 2.2.5-->
+    <link href="css/fullcalendar.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fullcalendar.print.css" rel="stylesheet" type="text/css" media='print' />
+	
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.main_menu .main-menu-item ul li .nav-link {
+    color: #000;}
+	</style>
+</head>
+
+<body class="dashbord-section">
+    <!--::header part start::-->
+    <header class="main_menu home_menu dashbord-header">
+		<div class="container">
+			<nav class="navbar navbar-expand-lg">
+				<a class="navbar-brand" href="index.html"><img src="img/logo-white.png" alt="logo" height="70"></a>
+				<div class="mobile-users d-lg-none ml-auto">
+				 	<ul class="navbar-nav">
+						<li class="nav-item position-relative pr-3 align-self-center"><a class="nav-link" href="#"><i class="ti-bell"></i>  <div class="notify"><span class="point"></span></div></a></li>						
+						<li class="nav-item dropdown profiledropdown position-relative">
+							<a class="nav-link dropdown-toggle title" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+								<!--<span class="usernames">Glen Johnson</span>-->
+								<img src="img/doctor_1.png" class="img-user rounded-circle" alt="My photo">										
+							</a>
+							<div class="dropdown-menu scale-up-left position-absolute" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="profile.html">My Profile</a>
+								<a class="dropdown-item" href="notification-settings.html">Notification Settings</a>
+								<a class="dropdown-item" href="change-password.html">Change Password</a>											
+								<a class="dropdown-item" href="index.html">Logout</a>							
+							</div>
+						</li>	
+					</ul>
+			  </div>
+				
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				 <span class="navbar-toggler-icon"></span>				</button>
+				 <div class="collapse navbar-collapse main-menu-item justify-content-end" id="navbarSupportedContent">
+					<ul class="navbar-nav align-items-center">
+						<li class="nav-item"><a class="nav-link" href="dashboard.html">Home</a></li>
+						<!--<li class="nav-item"><a class="nav-link" href="#">My Appoinments</a></li>-->
+						<li class="nav-item active"><a class="nav-link" href="my-schedule.html">My Schedule</a></li>
+						<li class="nav-item"><a class="nav-link" href="referrals-received.html">Referrals Received</a></li>
+						<li class="nav-item"><a class="nav-link" href="referrals-sent.html">Referrals Sent</a></li>												
+					</ul>
+					<ul class="navbar-nav align-items-center ml-auto">
+						<li class="nav-item d-none d-lg-block"><a class="nav-link" href="#"><i class="ti-bell"></i>  <div class="notify"><span class="point"></span></div></a></li>						
+						<li class="nav-item dropdown profiledropdown d-none d-lg-block">
+							<a class="nav-link dropdown-toggle title" id="navbarDropdownMenuLink3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
+								<span class="usernames">Glen Johnson</span>
+								<img src="img/doctor_1.png" class="img-user rounded-circle" alt="My photo">										
+							</a>
+							<div class="dropdown-menu scale-up-left" aria-labelledby="navbarDropdownMenuLink">
+								<a class="dropdown-item" href="profile.html">My Profile</a>
+								<a class="dropdown-item" href="notification-settings.html">Notification Settings</a>
+								<a class="dropdown-item" href="change-password.html">Change Password</a>											
+								<a class="dropdown-item" href="index.html">Logout</a>							
+							</div>
+						</li>								
+					</ul>
+				 </div>
+		  </nav>				
+		</div>
+	</header>
+    <!-- Header part end-->
+  
+	<div class="spacetop"></div>
+	<section class="section-dashbord">
+        <div class="container">
+            <div class="row">
+				<div class="col-xl-8 col-lg-8 appointment-conten order-2 order-lg-1 pt-3">
+									
+					<ul class="nav nav-tabs custom-tabs border-0" id="myTab" role="tablist">
+					  <li class="nav-item"><a class="nav-link active" id="home-tab" data-toggle="tab" href="#Upcoming" role="tab" aria-controls="Upcoming" aria-selected="true">Upcoming</a></li>
+					  <li class="nav-item"><a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Previous</a></li>					  
+					</ul>
+					
+					<div class="tab-content pt-3" id="myTabContent">
+						<div class="tab-pane fade show active" id="Upcoming" role="tabpanel" aria-labelledby="home-tab">														
+							<div class="appointmen-content">
+								<!--<div class="title-dashbord d-flex pt-3">
+									<h5 class="text-theme">January 11, 2020</h5>								
+								</div>-->
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>
+								
+								<!--<div class="title-dashbord d-flex pt-3">
+									<h5 class="text-theme">January 10, 2020</h5>								
+								</div>-->
+								
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>
+							</div>
+						</div>
+						
+						<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+							<div class="appointmen-content">
+								<!--<div class="title-dashbord d-flex pt-3">
+									<h5 class="text-theme">January 11, 2020</h5>								
+								</div>-->
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>
+								
+								<!--<div class="title-dashbord d-flex pt-3">
+									<h5 class="text-theme">January 10, 2020</h5>								
+								</div>-->
+								
+								<div class="appointmen-list card mb-3">
+									<div class="row align-items-center">
+										<div class="col-md-5 text-appont">
+											<h5 class="m-0">Alexa F/8 yrs/HealthSmart</h5>
+											<p class="m-0">Thyroid disease</p>
+										</div>
+										<div class="col-md-3 icons-dated">
+											<p class="m-0"><i class="ti-calendar"></i>  11 January 2020</p>
+											<p class="m-0"><i class="ti-time"></i>  8:30 pm</p>
+										</div>
+										<!--<div class="col-md-4 text-xl-right btnsgrp-appointment">
+											<a href="#" class="btn btn-outline-primary">Confirm</a>
+											<a href="#" class="btn btn-outline-primary">Reject</a>
+										</div>-->
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				
+				<div class="col-xl-4 col-lg-4 uploadfile-conten order-1 order-lg-2 card" style="border-radius:0;">
+					<div class=" wow zoomIn pt-3" data-wow-delay="0.2s">
+						<div class="calender">
+							<input type="text" id="datetimepicker2"/>
+						</div>
+						<br>
+						<!--<div class="time-content">
+							<h5>Calender</h5>
+							<div id="calendar"></div>
+						</div>-->
+						<div class="time-content">
+							<h5>Time</h5>
+							<div class="scraoll-time-section">
+								<div class="time-list">
+									<span class="mb-0">08:30 am</span>
+									<div class="selected-label blue-light">
+										<p class="m-0 text-dark">Robin Beattie</p>
+										<p class="m-0">Thyroid disease</p>
+									</div>
+								</div>
+								<div class="time-list">
+									<span class="mb-0">09:00 am</span>
+									<div class="selected-label yellow-light">
+										<p class="m-0 text-dark">Amy Sutton</p>
+										<p class="m-0">Teath Infection</p>
+									</div>
+								</div>
+								<div class="time-list">
+									<span class="mb-0">10:30 am</span>
+								</div>
+								<div class="time-list">
+									<span class="mb-0">08:30 am</span>
+									<div class="selected-label blue-light">
+										<p class="m-0 text-dark">Robin Beattie</p>
+										<p class="m-0">Thyroid disease</p>
+									</div>
+								</div>
+								<div class="time-list">
+									<span class="mb-0">10:30 am</span>
+								</div>
+								<div class="time-list">
+									<span class="mb-0">10:30 am</span>
+								</div>
+							<div class="scraoll-time-section">
+						</div>
+						<br>
+							  
+					</div>
+				</div>				
+			</div>
+		</div>
+			</div>
+		</div>	
+	</section>		    
+	<br>
+	
+	<!--Login Modal-->
+	<div class="modal fade modal-login" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<ul class="nav md-pills nav-justified pills-info">
+						<li class="nav-item">
+							<a class="nav-link border-bottom active" data-toggle="tab" href="#navbarLogin-login" role="tab" aria-selected="true">Login</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link border-bottom show" data-toggle="tab" href="#navbarLogin-signup" role="tab" aria-selected="false">Register</a>
+						</li>
+					</ul>
+	
+					<div class="tab-content py-0">
+						<div class="tab-pane fade active show" id="navbarLogin-login" role="tabpanel">
+							<form id="login" class="text-center" action="login" method="post" novalidate="novalidate">
+								<input type="hidden" id="security" name="security" value="c55502f913" /><input type="hidden" name="_wp_http_referer" value="/wp-admin/admin-ajax.php?p=45930" />
+								<br>
+	
+								<div class="my-3">
+									<div class="wp-social-login-widget pb-3">
+										<div class="wp-social-login-connect-with">Connect with:</div>
+										<div class="wp-social-login-provider-list">
+											<a href="">Facebook</a> &nbsp; &nbsp; <a href="">Google</a>
+										</div>
+										<div class="wp-social-login-widget-clearing"></div>
+									</div>
+								</div>
+	
+								<label for="username" style="float: left; font-size: 14px;">Username or e-mail</label>
+								<input type="text" id="username" class="form-control" name="username" />
+								<br />
+	
+								<label for="password" style="float: left; font-size: 14px;">Password</label>
+								<input type="password" id="password" class="form-control" name="password" autocomplete="off" />
+	
+								<div class="input-group pt-3 pb-3">
+									<div class="custom-checkbox custom-control col-6 text-left">
+										<input type="checkbox" name="remember" id="remember" class="custom-control-input" />
+										<label for="remember" class="custom-control-label">Remeber Me</label>
+									</div>
+									<label for="forgot-password" class="col-6">
+										<a href="forgot.html" class="ml-6">Forgot Password?</a>
+									</label>
+								</div>
+	
+								<button type="button" class="btn btn-primary btn-lg btn-block">Log In</button>
+							</form>
+						</div>
+	
+						<div class="tab-pane fade in" id="navbarLogin-signup" role="tabpanel">
+							<form id="register" class="text-center" action="register" method="post" novalidate="novalidate">
+								<input type="hidden" id="signonsecurity" name="signonsecurity" value="5d290bdd97" /><input type="hidden" name="_wp_http_referer" value="" />
+	
+								<br>
+	
+								<div class="my-3">
+									<div class="wp-social-login-widget">
+										<div class="wp-social-login-connect-with">Connect with:</div>
+	
+										<div class="wp-social-login-provider-list"><a href="">Facebook</a> &nbsp; &nbsp; <a href="">Google</a></div>
+	
+										<div class="wp-social-login-widget-clearing"></div>
+									</div>
+								</div>
+	
+								<label for="signonname" style="float: left; font-size: 14px;">Your Name</label>
+								<input type="text" id="signonname" class="form-control" name="signonname" />
+	
+								<br />
+	
+								<label for="signonusername" style="float: left; font-size: 14px;">Your username</label>
+								<input type="text" id="signonusername" class="form-control" name="signonusername" />
+	
+								<br />
+	
+								<label for="email" style="float: left; font-size: 14px;">Email Address</label>
+								<input type="email" id="email" class="form-control" name="email" />
+	
+								<br />
+								<label for="signonpassword" style="float: left; font-size: 14px;">Password</label>
+								<input type="password" id="signonpassword" class="form-control" name="signonpassword" autocomplete="off" />
+	
+								<br />
+	
+								<label for="password2" style="float: left; font-size: 14px;">Confirm Password</label>
+								<input type="password" id="password2" class="form-control" name="password2" autocomplete="off" />
+	
+								<br />
+	
+								<div class="form-check pl-0">
+									<input type="checkbox" class="form-check-input" id="newsletter" name="newsletter" value="subscribe" />
+									<label class="form-check-label small grey-text" for="newsletter">I agree to sign up for DocsTime account notifications and newsletter</label>
+								</div>
+	
+								<div class="mt-1">
+									<p class="small grey-text pb-3">By signing up you agree to data processing by the DocsTime The administrator processes data following the <a target="_blank" href="">Privacy Policy</a>.</p>
+									<button class="btn_1" type="submit" value="SIGNUP">Sign up</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+   
+ 	<footer class="footer-area">
+		<div class="footer">
+			<div class="container">
+				<div class="row justify-content-between">
+					<div class="col-xl-5 col-lg-12 single-footer-widget pb-3 pb-xl-0">
+						<h4 class="mb-3"><img src="img/logo-footer.png" alt="logo" style="max-height:40px;"></h4>						
+						<div class="client_review_part owl-carousel owl-loaded owl-drag">						
+							<div class="owl-stage-outer">
+								<div class="owl-stage" >
+									<div class="owl-item">
+										<p class="text-white">I work as a consultant. I travel a lot and have a very hectic schedule throughout the week. I often skip my appointments because of prior commitments. This has resulted in many complications in the past. However, with DocsTime I was able to schedule appointments just any time of the day. I could choose my physician as a time I could manage to visit. In fact, DocsTime helps you find doctors in your immediate vicinity. <b class="text-white">– David ******</b></p>
+									</div>
+									<div class="owl-item">
+										<p class="text-white">
+									 I visited my PCP for abdominal pain. My doctor told me that I need to see Gastroenterologist. Earlier I used  to call multiple offices to schedule an appointment that suites my time. First thing it was difficult to reach them on the phone right away second thing even if I am able to catch hold of them I am unable to schedule the time I need. With DocsTime app I was able to get an appointment with the best specialists around with in minuites. Thanks for the features provided. <b class="text-white">"Ellen"</b>
+									</p>
+									</div>
+								</div>
+							</div>
+						</div>							
+					</div>	
+					<div class="col-xl-2 col-6 col-sm-4 col-md-4 single-footer-widget">
+						<h4>Quick Links</h4>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="aboutus.html">About Us</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+						</ul>
+					</div>
+					
+					<div class="col-xl-2 col-6 col-sm-4 col-md-4 single-footer-widget order-md-3 order-4">
+						<h4>Are you a Doctor?</h4>
+						<ul>
+							<li><a href="joindocstime.html">Join DocsTime</a></li>
+						</ul>
+					</div>
+					<div class="col-xl-3 col-6 col-sm-4 col-md-4 single-footer-widget order-md-4 order-3">
+						<h4>Need Help?</h4>
+						<ul>
+							<li><a href="contactus.html">Contact Us</a></li>
+							<li><a href="terms_condition.html">Terms & Condition</a></li>
+							<li><a href="privacypolicy.html">Privacy Policy</a></li>
+							<li><a href="doctorprivacypolicy.html">Doctors Privacy Policy</a></li>
+						</ul>
+					</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		
+		<div class="copyright_part">
+			<div class="container">
+				<div class="row align-items-center">
+					<p class="footer-text m-0 col-lg-10 col-md-12 text-center">&copy; 2020 DocsTime. All Rights Reserved.</p>
+					<div class="col-lg-2 col-md-12 text-center text-lg-right footer-social">
+<a href="#"><i class="ti-facebook"></i></a>
+						<a href="#"> <i class="ti-twitter-alt"></i> 
+						</a>
+<a href="#"><i class="ti-linkedin"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	
+	<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+	<script src="js/bootstrap.min.js" type="text/javascript"></script>	
+	<script src="js/owl.carousel.min.js" type="text/javascript"></script>	
+	<script src="js/wow.min.js"></script>
+	<script>		
+	    new WOW().init();
+	</script>
+	<script src="js/custom.js" type="text/javascript"></script>	
+	<script src="js/jquery.datetimepicker.full.js"></script>
+	<script>
+		$.datetimepicker.setLocale('en');		
+		$('#datetimepicker2').datetimepicker({
+			//yearOffset:222,
+			lang:'ch',
+			timepicker:false,
+			format:'d/m/Y',
+			formatDate:'d/m/Y',
+			//minDate:'2018/04/02', // yesterday is minimum date
+			//maxDate:'2018/04/12', // and tommorow is maximum date calendar
+			inline:true,
+			scrollMonth : false,
+			scrollInput : false
+		});
+	</script>	
+	<script>
+		$(document).ready(function() { 
+		  $(".owl-category").owlCarousel({
+		 	  dots: true,
+			  margin: 15,
+			  items : 2,			 
+			  responsive: {
+				0:{
+				  items: 1
+				},
+				574:{
+				  items: 2
+				},
+				767:{
+				  items: 2
+				},
+				993:{
+				  items: 2
+				}
+			}	  
+		 
+		  });		 
+		});			
+	</script>	
+	
+	
+	 <!-- fullCalendar 2.2.5 -->
+    <script src="js/moment.min.js" type="text/javascript"></script>
+    <script src="js/fullcalendar.min.js" type="text/javascript"></script>
+    <!-- Page specific script -->
+    <script type="text/javascript">
+      $(function () {
+
+        /* initialize the external events
+         -----------------------------------------------------------------*/
+       /* function ini_events(ele) {
+          ele.each(function () {
+
+            // create an Event Object (http://arshaw.com/fullcalendar/docs/event_data/Event_Object/)
+            // it doesn't need to have a start or end
+            var eventObject = {
+              title: $.trim($(this).text()) // use the element's text as the event title
+            };
+
+            // store the Event Object in the DOM element so we can get to it later
+            $(this).data('eventObject', eventObject);
+
+            // make the event draggable using jQuery UI
+            $(this).draggable({
+              zIndex: 1070,
+              revert: true, // will cause the event to go back to its
+              revertDuration: 0  //  original position after the drag
+            });
+
+          });
+        }
+        ini_events($('#external-events div.external-event'));*/
+
+        /* initialize the calendar
+         -----------------------------------------------------------------*/
+        //Date for the calendar events (dummy data)
+        var date = new Date();
+        var d = date.getDate(),
+                m = date.getMonth(),
+                y = date.getFullYear();
+        $('#calendar').fullCalendar({
+          header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+          },
+          buttonText: {
+            today: 'today',
+            month: 'month',
+            week: 'week',
+            day: 'day'
+          },
+          //Random default events
+          events: [
+            {
+              title: 'All Day Event',
+              start: new Date(y, m, 1),
+              backgroundColor: "#f56954", //red
+              borderColor: "#f56954" //red
+            },
+            {
+              title: 'Long Event',
+              start: new Date(y, m, d - 5),
+              end: new Date(y, m, d - 2),
+              backgroundColor: "#f39c12", //yellow
+              borderColor: "#f39c12" //yellow
+            },
+            {
+              title: 'Meeting',
+              start: new Date(y, m, d, 10, 30),
+              allDay: false,
+              backgroundColor: "#0073b7", //Blue
+              borderColor: "#0073b7" //Blue
+            },
+            {
+              title: 'Lunch',
+              start: new Date(y, m, d, 12, 0),
+              end: new Date(y, m, d, 14, 0),
+              allDay: false,
+              backgroundColor: "#00c0ef", //Info (aqua)
+              borderColor: "#00c0ef" //Info (aqua)
+            },
+            {
+              title: 'Birthday Party',
+              start: new Date(y, m, d + 1, 19, 0),
+              end: new Date(y, m, d + 1, 22, 30),
+              allDay: false,
+              backgroundColor: "#00a65a", //Success (green)
+              borderColor: "#00a65a" //Success (green)
+            },
+            {
+              title: 'Click for Google',
+              start: new Date(y, m, 28),
+              end: new Date(y, m, 29),
+              url: 'http://google.com/',
+              backgroundColor: "#3c8dbc", //Primary (light-blue)
+              borderColor: "#3c8dbc" //Primary (light-blue)
+            }
+          ],
+          editable: true,
+          droppable: true, // this allows things to be dropped onto the calendar !!!
+          drop: function (date, allDay) { // this function is called when something is dropped
+
+            // retrieve the dropped element's stored Event Object
+            var originalEventObject = $(this).data('eventObject');
+
+            // we need to copy it, so that multiple events don't have a reference to the same object
+            var copiedEventObject = $.extend({}, originalEventObject);
+
+            // assign it the date that was reported
+            copiedEventObject.start = date;
+            copiedEventObject.allDay = allDay;
+            copiedEventObject.backgroundColor = $(this).css("background-color");
+            copiedEventObject.borderColor = $(this).css("border-color");
+
+            // render the event on the calendar
+            // the last `true` argument determines if the event "sticks" (http://arshaw.com/fullcalendar/docs/event_rendering/renderEvent/)
+            $('#calendar').fullCalendar('renderEvent', copiedEventObject, true);
+
+            // is the "remove after drop" checkbox checked?
+            if ($('#drop-remove').is(':checked')) {
+              // if so, remove the element from the "Draggable Events" list
+              $(this).remove();
+            }
+
+          }
+        });
+
+        /* ADDING EVENTS */
+        var currColor = "#3c8dbc"; //Red by default
+        //Color chooser button
+        var colorChooser = $("#color-chooser-btn");
+        $("#color-chooser > li > a").click(function (e) {
+          e.preventDefault();
+          //Save color
+          currColor = $(this).css("color");
+          //Add color effect to button
+          $('#add-new-event').css({"background-color": currColor, "border-color": currColor});
+        });
+        $("#add-new-event").click(function (e) {
+          e.preventDefault();
+          //Get value and make sure it is not null
+          var val = $("#new-event").val();
+          if (val.length == 0) {
+            return;
+          }
+
+          //Create events
+          var event = $("<div />");
+          event.css({"background-color": currColor, "border-color": currColor, "color": "#fff"}).addClass("external-event");
+          event.html(val);
+          $('#external-events').prepend(event);
+
+          //Add draggable funtionality
+          ini_events(event);
+
+          //Remove event from text input
+          $("#new-event").val("");
+        });
+      });
+    </script>
+	
+</body>
+</html>
